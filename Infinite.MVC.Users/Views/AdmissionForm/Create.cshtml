@@ -1,0 +1,80 @@
+﻿@model FormViewModel
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1> Create a New Admission</h1>
+
+
+<form asp-controller="AdmissionForm" asp-action="Create" method="post">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="mb-2">
+                <label asp-for="FirstName" class="form-label"></label>
+                <input type="text" asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName"></span>
+            </div>
+            <div class="mb-2">
+                <label asp-for="LastName" class="form-label"></label>
+                <input type="text" asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName"></span>
+            </div>
+            <div class="mb-2">
+                <label asp-for="FatherName" class="form-label"></label>
+                <input type="text" asp-for="FatherName" class="form-control" />
+               
+                <span asp-validation-for="FatherName"></span>
+            </div>
+            <div class="mb-2">
+                <label asp-for="MotherName" class="form-label"></label>
+                <input type="text" asp-for="MotherName" class="form-control" />
+                <span asp-validation-for="MotherName"></span>
+            </div>
+            <div class="mb-2">
+                <label asp-for="EmailId" class="form-label"></label>
+                <input type="text" asp-for="EmailId" class="form-control" />
+                <span asp-validation-for="EmailId"></span>
+            </div>
+            <div class="mb-2">
+                <label asp-for="PhoneNumber" class="form-label"></label>
+                <input type="text" asp-for="PhoneNumber" class="form-control" />
+                <span asp-validation-for="PhoneNumber"></span>
+            </div>
+            <div class="mb-2">
+                <label asp-for="DateOfBirth" class="form-label"></label>
+                <input type="date" asp-for="DateOfBirth" class="form-control" />
+                <span asp-validation-for="DateOfBirth"></span>
+            </div>
+            <div class="mb-2">
+                <label asp-for="City" class="form-label"></label>
+                <input type="text" asp-for="City" class="form-control" />
+                <span asp-validation-for="City"></span>
+            </div>
+            <div class="mb-2">
+                <label asp-for="State" class="form-label"></label>
+                <input type="text" asp-for="State" class="form-control" />
+                <span asp-validation-for="State"></span>
+            </div>
+            <div class="mb-2">
+                <label asp-for="Address" class="form-label"></label>
+                <input type="text" asp-for="Address" class="form-control" />
+                <span asp-validation-for="Address"></span>
+            </div>
+            <div class="mb-2">
+                <label asp-for="Qualification" class="form-label"></label>
+                <input type="text" asp-for="Qualification" class="form-control" />
+                <span asp-validation-for="Qualification"></span>
+            </div>
+            <div class="mb-2">
+                <label asp-for="EntranceTestScore" class="form-label"></label>
+                <input type="text" asp-for="EntranceTestScore" class="form-control" />
+                <span asp-validation-for="EntranceTestScore"></span>
+            </div>
+            <div class="mt-2 d-grid">
+                <input type="submit" class="btn btn-primary" value="Add New" />
+            </div>
+        </div>
+    </div>
+</form>
+
+

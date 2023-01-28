@@ -1,0 +1,40 @@
+﻿
+@model IEnumerable<FormViewModel> 
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="row">
+    <div class="col-md-7">
+        <div class="row">
+            <div class="col">
+                <h2>List of Applicants</h2>
+            </div>
+            <div class="col text-end">
+
+                <a asp-controller="AdmissionForm" asp-action="Create" class="btn btn-warning">Create new Admission</a>
+
+            <div>
+
+                <a asp-controller="AdmissionForm" asp-action="Edit" class="btn btn-warning">Edit</a> 
+
+                </div>
+
+                <div>
+
+                <a asp-controller="AdmissionForm" asp-action="Details" class="btn btn-primary">Details</a> 
+
+                </div>
+
+                <div>
+                                
+                <a asp-controller="AdmissionForm" asp-action="Delete" class="btn btn-primary">Delete</a>
+
+                </div>
+            </div>
+        </div>
+        
+            
+        </div>
+    </div>
+
+

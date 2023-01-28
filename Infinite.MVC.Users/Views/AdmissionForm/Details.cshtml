@@ -1,0 +1,34 @@
+﻿
+
+@model FormViewModel 
+@{
+    ViewData["Title"] = "Details";
+}
+<h1> Details</h1>
+<div class="row">
+    <div class="col-md-5">
+        <ul class="list-group">
+            <li class="list-group-item"><b>First Name :</b>@Model.FirstName</li>
+            <li class="list-group-item"><b>Last Name :</b>@Model.LastName</li>
+            <li class="list-group-item"><b>Father Name :</b>@Model.FatherName</li>
+            <li class="list-group-item"><b>Date Of Birth :</b>@Model.DateOfBirth</li>
+            <li class="list-group-item"><b>EmailId :</b> @Model.EmailId</li>
+            <li class="list-group-item"><b>Phone Number :</b>@Model.PhoneNumber</li>
+            <li class="list-group-item"><b>Gender :</b>@Model.Gender</li>
+            <li class="list-group-item"><b>City :</b> @Model.City</li>
+            <li class="list-group-item"><b>State :</b>@Model.State</li>
+            <li class="list-group-item"><b>Address :</b>@Model.Address</li>
+            <li class="list-group-item"><b>Qualification:</b> @Model.Qualification</li>
+            <li class="list-group-item"><b>Entrance Test Score:</b>@Model.EntranceTestScore</li>
+        </ul>
+        @* <div>
+        <form asp-controller="AdmissionForm" asp-action="Details" method="post">
+        <button type="submit" class="btn btn-danger">Details</button>
+        </form>
+        </div>*@
+        <a asp-controller="AdmissionForm" asp-action="Index">Back to List</a>
+    </div>
+</div>
+
+
+
